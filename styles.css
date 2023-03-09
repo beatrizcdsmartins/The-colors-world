@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+body, html{
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+ 
+  
+
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:active{
+    opacity: 0.5;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/Mountain\ river.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+/* NAV_BAR */
+
+nav{
+    display: flex;
+    
+}
+
+.icon{
+    position: absolute;
+    width: max(3.5vmin, 25px);
+    z-index: 10;
+    margin: 0 10px;
+    padding: 10px 0;
+    filter: invert(100%);
+  
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    position: fixed;
+    background-color: #14635299;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 200;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: max(2.5vmin, 15px);
+    
+
+   
+}
+
+nav ul li{
+    margin: 0 30px;
+
+}
+
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-text h1{
+    font-size: 8vmin;
+    color: rgb(255, 255, 255);
+}
+
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+
+.btn{
+    margin-top: 10%;
+    width: 40%;
+    height: 60px;
+    border-radius: 20px;
+    background-color: rgb(227, 54, 75, 0.8);
+    font-size: max(3vmin, 10px);
+    color: #fff;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    animation: btn-animation infinite linear 3s;
+    transition: opacity 0.5s ease;
+}
+
+.btn:active{
+    opacity: 0.6;
+   
+   
+
+
+}
+
+@keyframes btn-animation {
+    0%{
+        transform: scale(1.1);
+    }
+
+    30%{
+        transform: scale(1.5);
+    }
+
+    60%{
+        transform: scale(1.3);
+
+    }
+    100%{
+        transform: scale(1.0);
+
+    }
+    
+}
+
+.explore-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* Temperatura */
+
+.extern-section-container{
+    /* width: 80%; */
+    padding: 0 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #076063;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background: linear-gradient(45deg, #F5F0BB, #C4DFAA, #90C8AC, #73A9AD); 
+    background-size: 300% 300%;
+    animation: gradient 3s ease infinite;
+    
+ 
+}
+
+
+
+
+@keyframes gradient {
+0%{
+
+    background-position: 0% 50%;
+
+}
+
+
+50%{
+
+    background-position: 100% 50%;
+
+
+}
+
+100%{
+
+    background-position: 0% 50%;
+
+
+}
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    margin-bottom: 40px;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vmin;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.row h4{
+    font-size:max(3vmin, 20px);
+    margin: 20px auto;
+
+}
+
+.row p{
+    padding: 0px 40px;
+}
+
+.row .btn{
+    width: 30%;
+    font-size: 100%;
+}
+
+.paragraph-temperature{
+    text-align: center;
+}
+
+.temp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extern-section-container h1{
+    font-size: max(20px, 5vmin);
+}
+
+
+.extern-section-container h1, h4, p{
+    color: #034050;
+}
+
+
+
+
+/* INFORMATION */
+
+.information{
+    width: 100%;
+    background-color: #08495f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.information-container{
+    width: 50%;
+    padding: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.information-container h1{
+    font-size: max(7vmin, 25px);
+ 
+}
+
+.information-container p{
+    color: #fff;
+    font-size: max(2vmin, 15px);
+
+
+}
+
+.information-container .line{
+    margin-bottom: 10%;
+    width: 70%;
+}
+
+.information img{
+    width: 50%;
+    
+}
+
+
+
+
+/* SIGNIFICADO DAS CORES */
+
+.meaning-colors{
+    padding: 5%;
+}
+
+.meaning-colors .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.content-column{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+
+ 
+}
+
+.image-column{
+    width: 40%;
+  
+}
+
+
+.meaning-colors .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.gallery img{
+  max-width: 300px;
+  margin:10px;
+
+}
+
+.content-column h1{
+    font-size: 6vmin;
+}
+
+.content-column p{
+    padding: 0;
+    margin: 30px auto;
+    font-size: max(2vmin, 15px);
+}
+
+
+/* Color-year */
+
+.color-year{
+    display: flex;
+    justify-content: center;
+    background-color: #bb2649;
+    width: 100%;
+}
+
+.pallet, .text-container{
+    width: 50%;
+   
+}
+
+.pallet{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pallet img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: -100%;
+}
+
+.viva-1{
+    animation: animation-texts 5s linear infinite; 
+}
+
+.viva-2{
+    animation: animation-texts 4s linear infinite; 
+}
+
+.viva-3{
+    animation: animation-texts 4.5s linear infinite;
+}
+
+.viva-4{
+    animation: animation-texts 6s linear infinite;
+}
+.viva-5{
+    animation: animation-texts 5s linear infinite;
+}
+.viva-6{
+    animation: animation-texts 4s linear infinite;
+}
+
+@keyframes animation-texts {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+    
+
+   
+    
+}
+
+
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.text-container h1{
+    font-size: 5vmin;
+    font-weight: 200;
+    color: #fff;
+}
+
+
+.text-container p{
+    font-size: max(2vmin, 15px);
+    font-weight: 200;
+    color: #fff;
+    padding:50px 50px 0 50px;
+}
+
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #08495f;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer p{
+    color: #8ba5c6;
+    padding-right: 10px;
+}
+
+
+.menu-button{
+   
+    position: fixed;
+    filter: invert(100%);
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+    z-index: 200;
+    background-color: #f7709090;
+    padding: 10px;
+}
+
+/* Mobile menu */
+
+
+@media screen and (min-width:1700px) {
+
+    .text-container p{
+        font-size: max(2.7vmin, 15px);
+        font-weight: 200;
+        color: #fff;
+        padding:50px 50px 0 50px;
+    }
+       
+}
+
+
+@media screen and (min-width: 851px) and (max-width: 1300px) {
+    .information img{
+        max-height: 350px;
+        max-width: 600px;
+        padding-right: 10px;
+        
+     }
+
+    .content-column p{
+        font-size: max(2vmin, 10px);
+        padding: 10px 0 0 0;
+    }
+
+    .text-container p{
+        font-size: max(1.5vmin, 15px);
+        padding: 10%;
+
+    }
+
+    .text-container h1{
+        padding: 5% 10%;
+
+    }
+
+    .information, .text-container{
+        padding: 0px;
+    }
+
+    .information-container h1{
+        margin-left: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+    .explore-button{
+        height:10vmin;
+    }
+
+    
+
+    .menu-button{
+        display: block;
+    }
+
+    nav, .information{
+        padding: 0;
+    }
+
+    .extern-section-container{
+        padding: 20% 0;
+    }
+
+    .extern-section-container h1{
+        padding: 0 5%;
+    }
+
+    .information-container, .text-container, .text-container p{
+        padding: 10% 5%;
+    }
+
+    .information{
+        justify-content: center;
+    }
+
+    .icon{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    
+    nav ul{
+    
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(17, 170, 144, 0.95) !important;
+        margin-top: -2000px;
+        transition: all 0.5s ease;
+        animation: menu-mobile-animation 20s forwards;
+
+    }
+
+    @keyframes menu-mobile-animation {
+        to{
+            left: 0;
+        }
+    }
+
+    nav ul li{
+        margin: 30px auto;
+     
+    }
+
+    nav ul li a{
+        font-size: max(6vmin, 25px);
+        font-weight: 600;
+        color: #ffff;
+    }
+
+    .pallet, .image-combination, .break-line{
+        display: none;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .column{
+        margin: 20px auto;
+    }
+
+    .column img{
+        max-width: 90%;
+    }
+
+    .gallery{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery img{
+        width: 90%;
+    }
+
+    /* significado das cores */
+    
+.content-column{
+    width: 90%;
+
+}
+
+.image-column, .text-container, .information-container{
+    width: 90%;
+  
+}
+
+    footer{
+        padding: 10px;
+    }
+}
